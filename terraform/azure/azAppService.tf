@@ -1,0 +1,19 @@
+module "AppService" {
+  source = "./modules/azAppService"
+  app_command_line = var.app_command_line
+  app_service_name = var.app_service_name
+  appsp_name = var.appsp_name
+  docker_custom_image = var.docker_custom_image
+  docker_image_name = var.docker_image_name
+  docker_registry_password = var.docker_registry_password
+  docker_registry_url = var.docker_registry_url
+  docker_registry_username = var.docker_registry_username
+  location = var.app_location
+  os_type = var.os_type
+  resource_group_name = module.RG.resourceGroupName
+  tags = var.tags
+  virtual_network_subnet_id = module.subnets.subnetId
+  website_port = var.port
+  worker_count = var.worker_count
+  sku = var.sku
+}

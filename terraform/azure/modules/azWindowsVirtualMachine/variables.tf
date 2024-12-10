@@ -1,0 +1,10 @@
+variable "location" {}
+variable "vm_name" {}
+variable "resource_group_name" {}
+variable "vm_nic_name" {}
+variable "admin_username" {}
+variable "admin_password" {}
+variable "vm_size" {}
+variable "subnet_id" {}
+variable "tags" {}
+variable "computer_name" {}
